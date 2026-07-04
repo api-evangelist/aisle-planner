@@ -1,0 +1,92 @@
+aid: aisle-planner
+name: Aisle Planner
+review:
+  question: Does Aisle Planner expose a documented public WebSocket API?
+  answer: false
+  date: '2026-07-04'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was authored. Aisle Planner publishes no public,
+    self-service developer API of any kind - REST or otherwise - so there is
+    no server-push transport (WebSocket or SSE) on an Aisle-Planner-owned API
+    to model. The one private API key it issues exists solely to authenticate
+    a pre-built Zapier integration; Zapier itself polls for new triggers
+    rather than Aisle Planner pushing events over a documented protocol.
+findings:
+  summary: |
+    Aisle Planner does not publish a documented public WebSocket API - and,
+    more broadly, does not publish any public, self-service developer API.
+    Aisle Planner is a cloud-based business management platform for wedding
+    and event professionals (planners, venues, caterers, florists,
+    photographers), bundling lead management, proposals/contracts,
+    invoicing/payments, and project management (timelines, budgets,
+    guest/vendor manager, seating, event websites) into one system. The only
+    documented "API key" is a private, per-account key surfaced in Business
+    Settings > Integrations, whose sole stated purpose is to authenticate the
+    account inside Zapier. No developer.aisleplanner.com or
+    api.aisleplanner.com exists, no public API reference or OpenAPI
+    definition is published, and no WebSocket (ws:// or wss://) endpoint is
+    documented anywhere on aisleplanner.com or help.aisleplanner.com.
+  publicApi: |
+    No public developer API. There is no self-service developer portal, no
+    API reference, and no published request/response schema, endpoint list,
+    or base URL for third-party developers to build against. The Aisle
+    Planner Help Center's Zapier article states plainly that "you'll need
+    your Aisle Planner API key to plug into Zapier," found in the
+    Integrations tab of Business Settings - but the article documents only
+    the Zapier trigger/action catalog (new project, new lead, payment
+    received as triggers; create wedding project, create event project,
+    create lead as actions), not a general API surface. No other help-center
+    article, blog post, or marketing page references API endpoints,
+    authentication schemes beyond that single key, webhooks, or an app
+    marketplace.
+  transports:
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented anywhere by Aisle Planner as of the review date.
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API reference is published. A private per-account API key exists only to authenticate the Zapier integration; no base URL, endpoint, or schema is disclosed to third-party developers.
+    - protocol: Zapier (Managed Integration)
+      scheme: https
+      documented: true
+      note: Pre-built Zapier app with 3 documented triggers (new project, new lead, payment received) and 3 documented actions (create wedding project, create event project, create lead). Not a general-purpose developer API.
+  endpointsModeled: false
+  endpointsModeledNote: |
+    No endpoints are modeled here because Aisle Planner does not publicly
+    name or describe any REST resource, path, or schema - only the closed
+    Zapier trigger/action catalog, which is a managed no-code integration
+    surface rather than a documented API contract a developer can implement
+    against independently.
+sources:
+  - url: https://www.aisleplanner.com/
+    type: Website
+    note: Product homepage - business management platform for wedding/event professionals. No API mentioned.
+  - url: https://aisleplanner.com/pricing
+    type: Plans
+    note: Standardized tiered monthly pricing by active project count ($49.99-$229.99/month); no API pricing since no public API exists.
+  - url: https://help.aisleplanner.com/en/articles/2664042-an-intro-to-zapier-integrations
+    type: Documentation
+    note: States a private per-account "Aisle Planner API key" (Business Settings > Integrations) is required solely to connect Zapier; documents 3 triggers and 3 actions. No endpoint list, base URL, or schema disclosed.
+  - url: https://help.aisleplanner.com/en/collections/1547142-integrations
+    type: Documentation
+    note: Integrations collection covering Zapier and AP Connect (email, scheduling, calendar); no public API, webhook, or developer-access documentation found.
+  - url: https://help.aisleplanner.com/en/articles/1899152-aisle-planner-subscription-plan-options
+    type: Documentation
+    note: Describes subscription tier structure (by active-project count) and included features; no developer/API tier.
+  - url: https://www.linkedin.com/company/aisle-planner-inc-
+    type: LinkedIn
+    note: Official company LinkedIn page.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No WebSocket surface exists, and Aisle Planner publishes no public API to
+    model at all - only a private key gating a closed Zapier integration. The
+    apis.yml entry was authored as an honest company stub (no apis array),
+    documenting the Zapier-only integration model and the published
+    subscription pricing. No AsyncAPI document was created because there is
+    no Aisle-Planner-owned server-push transport to describe.

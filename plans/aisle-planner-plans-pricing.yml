@@ -1,0 +1,172 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Aisle Planner
+providerId: aisle-planner
+created: '2026-07-04'
+modified: '2026-07-04'
+reconciled: false
+tags:
+- Weddings
+- Event Planning
+- Business Management
+- Plans
+description: >-
+  Aisle Planner Pro publishes standardized, tiered monthly subscription pricing
+  on aisleplanner.com/pricing, gated primarily by the number of active client
+  projects rather than by API/developer usage - there is no public developer
+  API, so no separate API pricing exists. A "Sales Essentials" tier offers the
+  lead/CRM and business tools without project management. All tiers include
+  unlimited users, custom branding, personalized onboarding, and the Zapier
+  integration. A minimum of two AP Connect (email/scheduling) seats is
+  included, with additional seats billed separately. Annual billing gets a 10%
+  discount versus monthly; a 30-day free trial (credit card required) is
+  offered.
+notes: >-
+  Multiple third-party review sites (EventCertificate, GetApp, SaaSWorthy)
+  quote slightly different tier prices and breakpoints than the vendor's own
+  pricing page, likely reflecting promo pricing or page changes over time.
+  This file reconciles to the prices and tiers observed directly on
+  aisleplanner.com/pricing at review time; verify current rates before
+  quoting, as vertical SaaS pricing pages change frequently.
+sources:
+- https://aisleplanner.com/pricing
+- https://help.aisleplanner.com/en/articles/1899152-aisle-planner-subscription-plan-options
+- https://www.eventcertificate.com/aisle-planner-pricing-plans/
+plans:
+- id: aisle-planner-sales-essentials
+  name: Sales Essentials
+  type: paid
+  description: >-
+    Sales and business management tools only - lead management, scheduling
+    assistant, email integration, proposals, invoicing, and calendar - without
+    the project management suite (timelines, budgets, guest/vendor manager,
+    seating, event websites).
+  entries:
+  - label: Monthly Subscription
+    name: sales_essentials_monthly
+    type: flat
+    metric: account
+    limit: -1
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: $49.99/month
+    userMultiplied: false
+  elements:
+  - name: Lead Manager
+  - name: Custom Contact Forms
+  - name: Proposals and Contracts
+  - name: Invoicing and Online Payments
+  - name: AP Connect (min 2 seats)
+  - name: Zapier Integration
+- id: aisle-planner-tier-15
+  name: Up to 15 Projects
+  type: paid
+  description: >-
+    Full platform - sales/CRM tools plus the complete project management
+    suite (timeline, budget, calendar, notebook, design studio, vendor/guest
+    manager, seating, event websites, online RSVP) - for up to 15 concurrent
+    active projects.
+  entries:
+  - label: Monthly Subscription
+    name: tier_15_monthly
+    type: flat
+    metric: account
+    limit: 15
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: $69.99/month
+    userMultiplied: false
+  elements:
+  - name: Full Project Management Suite
+  - name: Unlimited Users
+  - name: Custom Branding
+  - name: Zapier Integration
+- id: aisle-planner-tier-25
+  name: 16-25 Projects
+  type: paid
+  description: Full platform access scaled to 16-25 concurrent active projects.
+  entries:
+  - label: Monthly Subscription
+    name: tier_25_monthly
+    type: flat
+    metric: account
+    limit: 25
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: $109.99/month
+    userMultiplied: false
+  elements:
+  - name: Full Project Management Suite
+  - name: Unlimited Users
+  - name: Custom Branding
+  - name: Zapier Integration
+- id: aisle-planner-tier-50
+  name: 26-50 Projects
+  type: paid
+  description: Full platform access scaled to 26-50 concurrent active projects.
+  entries:
+  - label: Monthly Subscription
+    name: tier_50_monthly
+    type: flat
+    metric: account
+    limit: 50
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: $164.99/month
+    userMultiplied: false
+  elements:
+  - name: Full Project Management Suite
+  - name: Unlimited Users
+  - name: Custom Branding
+  - name: Zapier Integration
+- id: aisle-planner-tier-100
+  name: 51-100 Projects
+  type: paid
+  description: >-
+    Full platform access scaled to 51-100 concurrent active projects. Accounts
+    needing more than 100 active projects should contact Aisle Planner sales
+    for a custom quote.
+  entries:
+  - label: Monthly Subscription
+    name: tier_100_monthly
+    type: flat
+    metric: account
+    limit: 100
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: $229.99/month
+    userMultiplied: false
+  elements:
+  - name: Full Project Management Suite
+  - name: Unlimited Users
+  - name: Custom Branding
+  - name: Zapier Integration
+- id: aisle-planner-free-trial
+  name: Free Trial
+  type: free
+  description: >-
+    A 30-day free trial of the full platform, credit card required at
+    signup; cancel anytime before the trial ends to avoid billing.
+  entries:
+  - label: Trial Period
+    name: trial
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: one-time
+    geo: global
+    unit: 1
+    price: free for 30 days (credit card required)
+    userMultiplied: false
+  elements:
+  - name: Full Platform Access
+  - name: Trial Access
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
