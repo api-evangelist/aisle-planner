@@ -27,6 +27,10 @@ created: '2026-07-04'
 modified: '2026-07-04'
 specificationVersion: '0.19'
 common:
+- type: DomainSecurity
+  url: security/aisle-planner-domain-security.yml
+- url: https://www.aisleplanner.com/feed/
+  type: Blog
 - type: LinkedIn
   url: https://www.linkedin.com/company/aisle-planner-inc-
 - type: Website
