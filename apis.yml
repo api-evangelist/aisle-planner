@@ -14,6 +14,17 @@ description: Aisle Planner is a cloud-based business management platform for wed
   received; actions are create wedding project, create event project, and create
   lead - it is not a general-purpose, self-serve REST API a third-party developer
   can register for and call directly.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
