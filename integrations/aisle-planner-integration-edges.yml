@@ -1,0 +1,425 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/aisle-planner/integrations
+checked:
+- https://composio.dev/toolkits/aisle-planner
+- https://monid.ai/tools/aisle-planner
+- https://n8n.io/integrations/aisle-planner/
+- https://zapier.com/apps/aisle-planner/integrations
+summary: null
+marketplace_apps:
+- marketplace: zapier
+  channel: ipaas-listing
+  app: aisle-planner
+  url: https://zapier.com/apps/aisle-planner/integrations
+  external_url: https://aisleplanner.com/
+  partner_tier: SILVER
+  triggers:
+  - key: new_lead
+    label: New Lead
+  - key: new_project
+    label: Project
+  - key: payment_paid
+    label: Payment Paid
+  actions:
+  - key: event
+    label: Create Event
+  - key: lead
+    label: Create Lead
+  - key: wedding
+    label: Create Wedding
+  searches: []
+edges:
+- partner_name: QuickBooks Online
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/quickbooks
+  direction: third-party
+  category: Accounting
+  partner_url: http://intuit.com/
+- partner_name: Squarespace Forms
+  partner: squarespace
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/squarespace-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.squarespace.com/
+- partner_name: Gmail
+  partner: gmail
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/gmail
+  direction: third-party
+  category: Email
+  partner_url: https://mail.google.com/
+- partner_name: Dubsado
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/dubsado
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://www.dubsado.com/
+- partner_name: Flodesk
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/flodesk
+  direction: third-party
+  category: Email Newsletters
+  partner_url: https://flodesk.com/
+- partner_name: Mailchimp
+  partner: mailchimp
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/mailchimp
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://mailchimp.com/
+- partner_name: Microsoft Outlook
+  partner: microsoft-outlook
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/microsoft-outlook
+  direction: third-party
+  category: Calendar
+  partner_url: https://outlook.live.com/
+- partner_name: Wix
+  partner: wix
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/wix
+  direction: third-party
+  category: Website Builders
+  partner_url: https://www.wix.com/
+- partner_name: Google Sheets
+  partner: google-sheets
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/google-sheets
+  direction: third-party
+  category: Google
+  partner_url: http://sheets.google.com/
+- partner_name: Pinterest
+  partner: pinterest
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/pinterest
+  direction: third-party
+  category: Social Media Accounts
+  partner_url: https://pinterest.com/
+- partner_name: Wave
+  partner: wave-financial
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/wave
+  direction: third-party
+  category: Accounting
+  partner_url: https://www.waveapps.com/
+- partner_name: Notion
+  partner: notion
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/notion
+  direction: third-party
+  category: Task Management
+  partner_url: https://www.notion.so/
+- partner_name: Slack
+  partner: slack
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/slack
+  direction: third-party
+  category: Team Chat
+  partner_url: https://slack.com/
+- partner_name: LeadConnector
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/leadconnector
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.leadconnectorhq.com/
+- partner_name: ActiveCampaign
+  partner: activecampaign
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/activecampaign
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.activecampaign.com/?utm_source=unpaid_syndication_website&utm_medium=referral&utm_campaign=zapier_listing
+- partner_name: Copper
+  partner: copper
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/copper
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://copper.com/?utm_source=zapier&utm_medium=zapier
+- partner_name: Kartra
+  partner: kartra
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/kartra
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://home.kartra.com/
+- partner_name: Brevo
+  partner: brevo
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/brevo
+  direction: third-party
+  category: Email Newsletters
+  partner_url: https://www.sendinblue.com/?utm_medium=plugin&utm_source=zapier
+- partner_name: VSCO Workspace
+  partner: vsco
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/vsco-workspace
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://vsco.co/workspace
+- partner_name: PartySlate Pro
+  partner: partyslate
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/partyslate-pro
+  direction: third-party
+  category: Sales & CRM
+  partner_url: https://pro.partyslate.com/
+- partner_name: Typeform
+  partner: typeform
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/typeform
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.typeform.com/signup?utm_medium=referral&utm_source=zapier&utm_campaign=zapier_integration&utm_content=marketplace
+- partner_name: MailerLite
+  partner: mailerlite
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/mailerlite
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.mailerlite.com/?utm_source=zapier&utm_medium=partner&utm_campaign=profile&utm_term=learn_more&utm_content=integrations
+- partner_name: WPForms
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/wpforms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://wpforms.com/
+- partner_name: Microsoft Office 365
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/office-365
+  direction: third-party
+  category: Email
+  partner_url: https://www.office.com/
+- partner_name: Evernote
+  partner: evernote
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/evernote
+  direction: third-party
+  category: Notes
+  partner_url: https://evernote.com/
+- partner_name: Zoom
+  partner: zoom
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/zoom
+  direction: third-party
+  category: Video Conferencing
+  partner_url: https://www.zoom.us/
+- partner_name: Dropbox
+  partner: dropbox
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/dropbox
+  direction: third-party
+  category: File Management & Storage
+  partner_url: https://dropbox.com/
+- partner_name: WooCommerce
+  partner: woocommerce
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/woocommerce
+  direction: third-party
+  category: eCommerce
+  partner_url: https://woocommerce.com/products/woocommerce-zapier/?utm_source=zapier&utm_medium=website&utm_campaign=integration
+- partner_name: Pipedrive
+  partner: pipedrive
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/pipedrive
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://pipedrive.com/
+- partner_name: Discord
+  partner: discord
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/aisle-planner/integrations/discord
+  direction: third-party
+  category: Team Chat
+  partner_url: https://discordapp.com/
+templates:
+- title: Create Airtable records for new Aisle Planner projects
+  url: https://zapier.com/apps/airtable/integrations/aisle-planner/1301523/create-airtable-records-for-new-aisle-planner-projects
+  apps:
+  - aisle-planner
+  - airtable
+- title: Send sms notifications for new Aisle Planner leads with SMS by Zapier
+  url: https://zapier.com/apps/aisle-planner/integrations/sms/1416777/send-sms-notifications-for-new-aisle-planner-leads-with-sms-by-zapier
+  apps:
+  - aisle-planner
+  - sms
+- title: Create new QuickBooks Online customers from new Aisle Planner projects
+  url: https://zapier.com/apps/aisle-planner/integrations/quickbooks/1662757/create-new-quickbooks-online-customers-from-new-aisle-planner-projects
+  apps:
+  - aisle-planner
+  - quickbooks
+- title: Create weddings in Aisle Planner for new projects booked in HoneyBook
+  url: https://zapier.com/apps/aisle-planner/integrations/honeybook/1635092/create-weddings-in-aisle-planner-for-new-projects-booked-in-honeybook
+  apps:
+  - honeybook
+  - aisle-planner
+- title: Send MailerLite campaigns for new Aisle Planner payments received
+  url: https://zapier.com/apps/aisle-planner/integrations/mailerlite/1247356/send-mailerlite-campaigns-for-new-aisle-planner-payments-received
+  apps:
+  - aisle-planner
+  - mailerlite
+- title: Add new Aisle Planner payments to Google Sheets as multiple rows
+  url: https://zapier.com/apps/aisle-planner/integrations/google-sheets/1263401/add-new-aisle-planner-payments-to-google-sheets-as-multiple-rows
+  apps:
+  - aisle-planner
+  - google-sheets
+- title: Create Google Meet meetings for new Aisle Planner projects
+  url: https://zapier.com/apps/aisle-planner/integrations/google-meet/1272874/create-google-meet-meetings-for-new-aisle-planner-projects
+  apps:
+  - aisle-planner
+  - google-meet
+- title: Create new Aisle Planner leads from Gravity Forms submissions
+  url: https://zapier.com/apps/aisle-planner/integrations/gravity-forms/1288873/create-new-aisle-planner-leads-from-gravity-forms-submissions
+  apps:
+  - gravity-forms
+  - aisle-planner
+- title: Create new Aisle Planner leads from Gravity Forms submissions
+  url: https://zapier.com/apps/aisle-planner/integrations/gravity-forms/1289704/create-new-aisle-planner-leads-from-gravity-forms-submissions
+  apps:
+  - gravity-forms
+  - aisle-planner
+- title: Generate Aisle Planner leads from new Kit sequence subscribers
+  url: https://zapier.com/apps/aisle-planner/integrations/kit/1291338/generate-aisle-planner-leads-from-new-kit-sequence-subscribers
+  apps:
+  - kit
+  - aisle-planner
+- title: Create rows in Google Sheets for new Aisle Planner leads
+  url: https://zapier.com/apps/aisle-planner/integrations/google-sheets/1315386/create-rows-in-google-sheets-for-new-aisle-planner-leads
+  apps:
+  - aisle-planner
+  - google-sheets
+- title: Create Discord channel messages for new Aisle Planner projects
+  url: https://zapier.com/apps/aisle-planner/integrations/discord/1317410/create-discord-channel-messages-for-new-aisle-planner-projects
+  apps:
+  - aisle-planner
+  - discord
+template_total: 91
