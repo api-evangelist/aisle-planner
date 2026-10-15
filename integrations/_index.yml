@@ -310,7 +310,6 @@
   arazzo: null
 - slug: aisle-planner-microsoft-office-365
   label: Microsoft Office 365
-  partner: microsoft-office-365
   partner_name: Microsoft Office 365
   category: Email
   type: marketplace
@@ -378,5 +377,30 @@
   channel: ipaas-usage
   evidence: https://zapier.com/apps/aisle-planner/integrations/pipedrive
   source: edge
+  status: pending-partner-spec
+  arazzo: null
+- slug: aisle-planner-zapier
+  label: Zapier
+  partner: zapier
+  partner_name: Zapier
+  type: marketplace
+  marketplace: zapier-directory
+  channel: ipaas-listing
+  evidence: https://zapier.com/apps/aisle-planner/integrations
+  source: edge
+  relationship: ipaas-bridge
+  contract_reference:
+    register: Zapier app directory (zapier.com/api/v4/apps)
+    spec_file: null
+    role: ipaas-connector:zapier
+    registered_name: Aisle Planner
+    matched_domain: aisleplanner.com
+    matched_by: domain
+    detected_by: sweep-workflow-automation.py
+    detected: '2026-10-15'
+    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
+    app_slug: aisle-planner
+    beta: false
+    builder: unknown (not in the directory record)
   status: pending-partner-spec
   arazzo: null

@@ -6,6 +6,7 @@ checked:
 - https://composio.dev/toolkits/aisle-planner
 - https://monid.ai/tools/aisle-planner
 - https://n8n.io/integrations/aisle-planner/
+- https://zapier.com/api/v4/apps/
 - https://zapier.com/apps/aisle-planner/integrations
 summary: null
 marketplace_apps:
@@ -361,6 +362,31 @@ edges:
   direction: third-party
   category: Team Chat
   partner_url: https://discordapp.com/
+- partner_name: Zapier
+  partner: zapier
+  partner_match: aggregator
+  type: marketplace
+  marketplace: zapier-directory
+  channel: ipaas-listing
+  relationship: ipaas-bridge
+  direction: third-party
+  evidence: https://zapier.com/apps/aisle-planner/integrations
+  category: null
+  contract_reference:
+    register: Zapier app directory (zapier.com/api/v4/apps)
+    spec_file: null
+    role: ipaas-connector:zapier
+    registered_name: Aisle Planner
+    matched_domain: aisleplanner.com
+    matched_by: domain
+    detected_by: sweep-workflow-automation.py
+    detected: '2026-10-15'
+    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
+    app_slug: aisle-planner
+    beta: false
+    builder: unknown (not in the directory record)
+  detected_by: sweep-workflow-automation.py
+  first_seen: '2026-10-15'
 templates:
 - title: Create Airtable records for new Aisle Planner projects
   url: https://zapier.com/apps/airtable/integrations/aisle-planner/1301523/create-airtable-records-for-new-aisle-planner-projects
